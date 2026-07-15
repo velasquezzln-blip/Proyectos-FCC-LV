@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <center>
+    <h1 id="title">Encuesta Futbolera
+    </h1>
+    
+    <p id="description">¿Sos fanático del fútbol? Completá esta encuesta y contanos qué equipo seguís, qué torneos mirás y quién es tu jugador favorito.</p>
+    </center>
+
+    <form id="survey-form"/>
+    <center>
+    <label id="name-label" for="name">Nombre</label>
+    <input 
+    id="name"
+    type="text"
+    placeholder="Ingresa tu nombre"
+    required
+    />
+    <br>
+    <label id="email-label" for="email">Email</label>
+    <input
+    id="email"
+    type="email"
+    placeholder="Ingresa tu email"
+    required
+    />
+    <br>
+    <label id="number-label" for="number">Edad (opcional)</label>
+    <input
+    id="number"
+    type="number"
+    min="10"
+    max="50"
+    placeholder="Edad"
+    />
+    <br>
+    <p>¿Cual es tu liga favorita?</p>
+    <select id="dropdown">
+    <option>Premier Ligue</option>
+    <option>Ligue 1</option>
+    <option>Serie A</option>
+    <option>Bundesliga</option>
+    <option>LaLiga</option>
+    <option>Liga Profesonal Argentina</option>
+    </select>
+    <p>¿Con que frecuencia ves Fútbol?</p>
+    <label>
+      <input type="radio" name="frecuencia" value="todos-los-dias">Todos los dias
+    </label>
+    <label>
+      <input type="radio" name="frecuencia" value="solo-los-fines-de-semana">Solo los fines de semana
+    </label>
+    <label>
+      <input type="radio" name="frecuencia" value="ocasionalmente">Ocasionalmente
+    </label>
+    <p>¿Que competiciones seguis?</p>
+    <input type="checkbox" value="UEF-champions-ligue">UEF Champions Ligue
+    <input type="checkbox" value="copa-del-mundo">Copa del Mundo
+    <input type="checkbox" value="copa-libertadores">Copa Libertadores
+    <input type="checkbox" value="copa-america">Copa America
+    <input type="checkbox" value="liga-local">Liga Local
+    <p>¿Cual es tu jugador favorito?</p>
+    <textarea
+      rows="5"
+      cols="40"
+      placeholder="escribelo aqui">
+    </textarea>
+    <br>
+    <button
+     id="submit"
+     type="submit">Enviar
+    </button>
+    </center>
+  </body>
+  <body style="background-color: lightblue;">
+</html>
